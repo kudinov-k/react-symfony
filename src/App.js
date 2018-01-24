@@ -51,7 +51,7 @@ class App extends Component {
             // show the loading overlay
             this.setState({loading: true});
             // fetch your data
-            Axios.post('http://ec2-34-213-129-153.us-west-2.compute.amazonaws.com:8080/tracks', {
+            Axios.post('http://ec2-34-213-129-153.us-west-2.compute.amazonaws.com//server/web/app.php/tracks', {
               page: state.page,
               pageSize: state.pageSize,
               sorted: state.sorted,
