@@ -21,7 +21,7 @@ class TracksController extends FOSRestController
     public function postAction(Request $request)
     {
         $page = $request->get('page');
-        $limit = $request->get('pageSize');
+        $limit = $request->get('pageSize', 10);
         $sorted = $request->get('sorted');
         $filtered = $request->get('filtered');
         $result = $this->getDoctrine()->getRepository('AppBundle:Track')
